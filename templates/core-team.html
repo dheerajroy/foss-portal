@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Core Team Members{% endblock %}
+
+{% block content %}
+    <h1>Core Team Members</h1>
+    <div class="core-team-container">
+        {% for member in members %}
+        {% include 'components/core-team-member-card.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}

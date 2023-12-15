@@ -1,0 +1,15 @@
+{% load static %}
+
+<nav>
+    <div class="navbar-container">
+        <div class="logo-container" onclick="location.href = '/'">
+            <img src="{% static 'images/logo.png' %}" alt="FOSS CELL" class="logo">
+            <h3>FOSS CELL</h3>
+        </div>
+        <div class="navbar-links">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'events' %}">Events</a>
+            <a href="{% url 'core-team-members' %}">Core Team</a>
+        </div>
+    </div>
+</nav>

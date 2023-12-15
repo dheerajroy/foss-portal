@@ -1,0 +1,12 @@
+{% load static %}
+
+<div class="core-team-member-card">
+    <img src="{{ member.picture.url }}" alt="">
+    <h2>{{ member.name }}</h2>
+    <h3>{{ member.position }}</h3>
+    <q>{{ member.description }}</q>
+    <div>
+        <a href="tel:+91{{member.phone_number}}">Call</a>
+        <a href="mailto:{{member.email}}">E-Mail</a>
+    </div>
+</div>

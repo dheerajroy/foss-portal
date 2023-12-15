@@ -1,0 +1,7 @@
+{% load static %}
+
+<a href="{% url 'event' pk=event.pk %}" class="event-card">
+    <img src="{{ event.poster.url }}" alt="">
+    <h2>{{ event.title }}</h2>
+    <h4>On {{ event.date_time }}</h4>
+</a>

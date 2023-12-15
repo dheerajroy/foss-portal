@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ event.title }}{% endblock %}
+
+{% block content %}
+    <div class="event-container">
+        <div>
+            <img src="{{ event.poster.url }}" alt="">
+            <h1>{{ event.title }}</h1>
+            <h3>On: {{ event.date_time }}</h3>
+            <h3>Venue: {{ event.venue }}</h3>
+            <p>{{ event.description }}</p>
+            <div>
+                <a href="{% url 'register' pk=event.pk %}">Register</a>
+                <a href="{% url 'feedback' pk=event.pk %}">Feedback</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

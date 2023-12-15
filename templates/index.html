@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="home-container">
+        <img src="{% static 'images/logo1.png' %}" alt="">
+        <div class="index-links">
+            <a href="{% url 'events' %}">Events</a>
+            <a href="{% url 'core-team-members' %}">Core Team</a>
+        </div>
+    </div>
+{% endblock %}

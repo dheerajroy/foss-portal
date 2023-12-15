@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Events{% endblock %}
+
+{% block content %}
+<h1>Events</h1>
+<div class="events-container">
+    {% for event in events %}
+    {% include 'components/event-card.html' %}
+    {% endfor %}
+</div>
+{% endblock %}
